@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NewPostComponent } from './components/new-post/new-post.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms'
+import { MessagesService } from './services/messages.service'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { FormsModule } from '@angular/forms'
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    MessagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

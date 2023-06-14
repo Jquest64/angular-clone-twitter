@@ -10,7 +10,7 @@
         <!-- Formulário -->
         <div class="flex-1">
             <!-- Textarea -->
-                <textarea class="block w-full px-4 py-2 mb-2 font-light placeholder-gray-700 bg-gray-200 border border-transparent rounded-lg appearance-none resize-none focus:outline-none focus:shadow-outline focus:bg-gray-100" [(ngModel)]="tweetMessage" (input)="changeTweet()" [maxlength]="tweetMaxLength" placeholder="O que está acontecendo..." rows="3"></textarea>
+                <textarea class="block w-full px-4 py-2 mb-2 font-light placeholder-gray-700 bg-gray-200 border border-transparent rounded-lg appearance-none resize-none focus:outline-none focus:shadow-outline focus:bg-gray-100" [(ngModel)]="tweetMessage" (input)="changeTweet()" (keyup.enter)="sendTweet()" [maxlength]="tweetMaxLength" placeholder="O que está acontecendo..." rows="3"></textarea>
 
             <!-- Linha Divisória -->
             <div class="w-auto border rounded-lg">
